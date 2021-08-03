@@ -87,7 +87,7 @@ const _reload = () => {
 
     let modify = ((new Date().getTime()) % 20);
 
-    // console.log("setting interval:" + settingInterval + ", modify:" + modify);
+    console.log("setting interval:" + settingInterval + ", modify:" + modify);
 
     if (settingInterval > modify)
         settingInterval -= modify;
