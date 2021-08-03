@@ -6,7 +6,7 @@
     const RESERVE_URL = 'https://v-search.nid.naver.com/reservation?orgCd=';
     const RESERVER_URL_ADD_PARM = '&sid=';
 
-    const MIN_RELOAD_INTERVAL_MILLISECONDS = 2000;
+    const MIN_RELOAD_INTERVAL_MILLISECONDS = 500;
 
     const init = () => {
         document.getElementById('bot-token').value = localStorage.getItem('NAVER_VACCINE_MACRO::bot-token');

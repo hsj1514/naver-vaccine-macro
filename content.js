@@ -3,7 +3,7 @@ const chrome_v3 = chrome.runtime; /// manifest v3
 
 const MAIN_URI = "https://v-search.nid.naver.com/reservation";
 const PROGRESS_PATH = "/progress";
-const RELOAD_INTERVAL_MILLISECONDS = 2000;
+const RELOAD_INTERVAL_MILLISECONDS = 500;
 let _tick;
 let sButtonText = "";
 let sCurrentName = "";
