@@ -62,9 +62,7 @@ const macroStop = (result) => {
 };
 
 const _reload = (data) => {
-    let settingInterval = parseInt(data.interval);
-    if (!Number.isInteger(settingInterval))
-        settingInterval = RELOAD_INTERVAL_MILLISECONDS;
+    settingInterval = RELOAD_INTERVAL_MILLISECONDS;
 
     let modify = ((new Date().getTime()) % 20);
 

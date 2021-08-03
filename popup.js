@@ -11,18 +11,7 @@
     const init = () => {
         document.getElementById('bot-token').value = localStorage.getItem('NAVER_VACCINE_MACRO::bot-token');
         document.getElementById('chat-id').value = localStorage.getItem('NAVER_VACCINE_MACRO::chat-id');
-        let savedInterval = parseInt(localStorage.getItem('NAVER_VACCINE_MACRO::interval'));
-
-        // console.log("saved interval : ");
-        // console.log(savedInterval);
-        // console.log(Number.isInteger(savedInterval));
-
-        if (!savedInterval || savedInterval < MIN_RELOAD_INTERVAL_MILLISECONDS)
-        {
-            savedInterval = MIN_RELOAD_INTERVAL_MILLISECONDS;
-            console.log("saved interval invalid reset to : " + savedInterval);
-            localStorage.setItem('NAVER_VACCINE_MACRO::interval', savedInterval);
-        }
+        let savedInterval = MIN_RELOAD_INTERVAL_MILLISECONDS;
         document.getElementById('interval').value = savedInterval;
         document.getElementById('reserve_test').checked = localStorage.getItem('NAVER_VACCINE_MACRO::reserve_test') == 1;
 
